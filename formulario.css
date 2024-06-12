@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background_color_1: #2D2E32;
+    --background_color_2: #25262A;
+    --main__color__white: #EBEBEB;
+    --secondary__color__green: #1FDCB0;
+    --secondary__color__purple: #533574;
+}
+
+body {
+    color: var(--main__color__white);
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.portafolio__acerca__deMi {
+    width: 100%;
+    height: auto;
+    background-color: var(--background_color_1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    align-self: flex-start;
+}
+
+.portafolio__barra__pantalla__mobile{
+    width: 100%;
+    font-size: 40px;
+    margin: 30px 0 0 20px;
+    color: var(--secondary__color__green);
+} 
+
+.portafolio__barra__pantalla__mobile .menu__mb, ul{
+    display: none;
+    list-style: none;
+}
+
+input:checked~ul {
+    display: block;
+}
+
+.portafolio__barra__pantalla__grande {
+    display: none;
+}
+
+.portafolio__barra__navegacion {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 10%;
+    background-color: var(--background_color_2);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.titulo__acerca__deMi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    gap: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.nombre__titulo {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.acercadeMi__txt{
+    margin: 40px;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.acercadeMi__tarjeta{
+    width: 270px;
+    height: 250px;
+}
+
+.acercadeMi__info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.imagen__jhoan{
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* .acercadeMi__svgs{
+    position: absolute;
+} */
+
+.acercadeMi__cargo{
+    font-size: 16px;
+}
+
+.acercadeMi__cargo h4{
+    font-size: 15px;
+}
+
+/* Inicio seccion proyectos */
+.portafolio__proyectos{
+    background-color: var(--background_color_2);
+}
+
+/* fin seccion proyectos */
+
+/* Inicio seccion tecnologias */
+.portafolio__tecnologias{
+    background-color: var(--background_color_1);
+}
+
+/* fin seccion tecnologias */
+
+/* Inicio seccion contacto */
+.portafolio__contacto{
+    background-color: var(--background_color_2);
+}
+
+/* fin seccion contacto */
+
